@@ -1,5 +1,7 @@
 本项目是验证spring-session的
 
+项目部署的配置文件在deploy目录中
+
 1.先将deploy目录中的user.sql导入到user数据库中，地址指向localhost，root/root
 2.启动redis，指向127.0.0.1
 3.复制两个tomcat，将配置文件分别放入两个tomcat中，一个端口是8080，一个是8081
