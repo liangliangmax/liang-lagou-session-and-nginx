@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+
+<head>
+
+</head>
+
+<body>
+
+<form th:action="${#httpServletRequest.getContextPath()}+'/login'" method="get">
+    <input name="username" type="text" value="zhangsan"/>
+    <input name="password" type = "text" value="123456"/>
+    <input type="submit" value="登录"/>
+</form>
+
+<a th:href="${#httpServletRequest.getContextPath()}+'/success'">直接进去登陆后页面</a>
+
+</body>
+
+</html>

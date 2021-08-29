@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+
+
+<h1>success</h1>
+
+<div th:text="${#httpServletRequest.getSession().getId()}"></div>
+<div th:text="${#httpServletRequest.getServerPort()}"></div>
+<div th:text="${#httpServletRequest.getContextPath()}"></div>
+
+
+<form th:action="${#httpServletRequest.getContextPath()}+'/logout'" method="get">
+    <input type="submit" value="退出"/>
+</form>
