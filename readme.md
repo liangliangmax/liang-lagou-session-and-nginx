@@ -20,7 +20,7 @@
 
 7. - 访问http://localhost/session/getUser，会提示“非法访问，请重新登录”
 
-     - 然后访问 https://localhost/session/login?username=zhangsan&password=123456，会提示“登录成功”
+   - 然后访问 https://localhost/session/login?username=zhangsan&password=123456，会提示“登录成功”
 
    - 此时再访问getUser即可获取到信息：{"context":"xxxxxx\apache-tomcat-9.0.52-8080\\webapps\\session\\:80","sessionId":"6fb4b051-a04c-4b9f-be27-76cf6dbd818e","user":{"id":"1111","username":"zhangsan","password":"123456"}}
 
